@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <!-- Main table for overall structure -->
+    <table id="main" border="0">
+        <!-- 1st row - My Account & Create Account -->
+        <tr class="header-1">
+            <td><span>FREE SHIPPING ON ORDERS OVER $99</span></td>
+            <td>
+                <div class="dropdown">
+                    <button type="button" class="dropbtn">My Account<i class="fa fa-sort-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">My Profile</a>
+                        <a href="#">My Purchases</a>
+                        <a href="#">Logout</a>
+                    </div>
+                </div>
+            </td>
+            <td id="r1td3">
+                <button type="submit" class="btn1"><a href="#">Create An Account</a></button>
+            </td>
+        </tr>
+        <!-- 2nd row - search bar, logo, heart and shopping cart -->
+        <tr class="header-2">
+            <td style="width: 10%;"> 
+                <div>
+                    <input type="text" placeholder="Search here..."  id="search-bar">
+                    <button type="submit" id="search-bar"><i class="fa fa-search"></i></button>
+                </div>
+            </td>
+            <td id="r2td2">
+                <img src="logo.png" alt="Logo">
+            </td>
+            <td id="r2td3">
+                <button id="btn2"><i class="fa fa-heart-o"></i></button>
+                <button id="btn2"><i class="fa fa-shopping-cart"></i></button>
+            </td>
+        </tr>
+        <!-- 3rd row - 6 navigation dropdowns -->
+        <tr class="header-3">
+            <td colspan="3">
+                <div class="dropdown-2">
+                    <button type="button" class="dropbtn-2" style="color:mediumvioletred;">SEATING</button>
+                    <div class="dropdown-content-2">
+                        <a href="#">Sofas</a>
+                        <a href="#">Chairs</a>
+                        <a href="#">Stools & benches</a>
+                    </div>
+                </div>
+                <div class="dropdown-2">
+                    <button type="button" class="dropbtn-2">TABLE</button>
+                    <div class="dropdown-content-2">
+                        <a href="#">Dining table </a>
+                        <a href="#">Coffee tables</a>
+                        <a href="#">Study tables</a>
+                    </div>
+                </div>
+                <div class="dropdown-2">
+                    <button type="button" class="dropbtn-2">WORKSTATION FURNITURES</button>
+                    <div class="dropdown-content-2">
+                        <a href="#">Office tables</a>
+                        <a href="#">Office chairs</a>
+                        <a href="#">Shelves</a>
+                    </div>
+                </div>
+                <div class="dropdown-2">
+                    <button type="button" class="dropbtn-2">DINING ROOM</button>
+                    <div class="dropdown-content-2">
+                        <a href="#">Dining tables</a>
+                        <a href="#">Dining chairs</a>
+                    </div>
+                </div>
+                <div class="dropdown-2">
+                    <button type="button" class="dropbtn-2">ALL PAGES</button>
+                </div>
+                <div class="dropdown-2">
+                    <button type="button" class="dropbtn-2">CONTACT</button>
+                    <div class="dropdown-content-2">
+                        <a href="#">Email</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Location</a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <!-- 4th row - banner  -->
+        <tr>
+            <td colspan="6"> 
+                <div>
+                    <img src="banner.png" alt="Banner" id="banner">
+                </div>
+            </td>
+        </tr>
+        <!-- 5th row - cart span -->
+        <tr>
+            <td id="r5td1">
+                <span id="cart">Cart</span>
+            </td>
+        </tr>
+        <!-- 6th row - cart table -->
+        <tr>
+            <td colspan="3" id="r6td1">
+                <table border="1" id="product_tbl">
+                    <tr>
+                        <th>IMAGE</th><th>PRODUCT</th><th>PRICE</th><th>QUANTITY</th><th>TOTAL</th><th>REMOVE</th>
+                    </tr>
+                    <tr>
+                     <td style="width: 10%;"><img src="item01.png" alt="Item 01" id="item01_img"></td>
+                     <td>Vestibulum suscipit</td>
+                     <td>$165.00</td>
+                     <td><select name="quantity" id="qty01">
+                         <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                         </select>
+                     </td>
+                     <td><p id="total_1">$165.00</p></td>
+                     <td><button class="delete-item"><i class="fa fa-close"></i></button></td>
+                 </tr>
+                 <tr>
+                     <td><img src="item02.png" alt="Item 02" id="item02_img"></td>
+                     <td>Vestibulum dictum magna</td>
+                     <td>$50.00</td>
+                     <td><select name="quantity" id="qty02">
+                         <option value="1">1</option><option value="2">2</option><option value="3">3</option>
+                         </select>
+                     </td>
+                     <td><p id="total_2">$50.00</p></td>
+                     <td><button class="delete-item"><i class="fa fa-close"></i></button></td>
+                    </tr>
+                </table><br/><br/>
+            </td>
+        </tr>
+        <!-- 7th row - update chart + continue shoppping button + cart totals  -->
+        <tr>
+            <td class="r7td1">
+                <button class="btn3"><a href="#">UPDATE CART</a></button>
+                <button class="btn3"><a href="#">CONTINUE SHOPPING</a></button>
+            </td>
+            <td colspan="2">
+                <span id="cart-total">CART TOTALS</span>
+            </td>
+        </tr>
+        <!-- 8th row - total fees and checkout -->
+        <td class="r8td1">
+            <span>COUPON</span><br/><br/>
+            <span >Enter your coupon code if you have one</span><br/><br/>
+            <input type="text" placeholder="Coupon code"><button class="btn3"><a href="#">APPLY COUPON</a></button>
+        </td>
+        <td id="subtotal-shipping">
+            <span>SUBTOTAL</span><br/>
+            <span>SHIPPING</span>
+        </td>
+        <td class="r8td3">
+            <span id="sub-fee">$215.00</span><br/>
+            <input type="radio" value="flate-rate"><label for="flate-rate">Flate Rate: </label><span id="sub-fee">$7.00</span><br/>
+            <input type="radio" value="free-shipping"><label for="free-shipping">Free Shipping </label><br/><br/>
+            <span>Calculate Shipping</span>
+        </td>
+        <!-- 9th row - total and checkout -->
+        <tr>
+            <td></td>
+            <td class="total"><span>TOTAL</span></td>
+            <td class="checkout">
+                <span id="total-price">$215.00</span><br/><br/>
+                <input type="submit" value="Proceed to Checkout" id="checkout-btn">
+            </td>
+        </tr>
+    </table>  
+</body>
+</html>

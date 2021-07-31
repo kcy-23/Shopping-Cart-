@@ -1,0 +1,278 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+img {
+    width: 100px;
+}
+
+table #main {
+    table-layout: fixed;
+}
+
+button.btn1 {
+    border: none;
+    font-size: 12px;
+    background-color: white;
+}
+
+button.btn1 a {
+    text-decoration: none;
+    color: black;
+}
+
+button#btn2 {
+    border: none;
+    margin: 5px;
+    padding: 8px;
+    background-color: white;
+    font-size: 25px;
+}
+
+table td#r1td3 {
+    text-align: right;
+}
+
+table td#r2td2 {
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+table td#r2td2 img {
+    margin-left: 100px;
+}
+
+table td#r2td3 {
+    text-align: right;
+    width: 10%;
+}
+th {
+    font-weight: normal;
+    padding: 10px;
+    font-size: 12px;
+}
+
+#item01_img, #item02_img {
+    padding: 10px;
+}
+
+select {
+    border: none;
+    background-color: #c0c0c0;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+button.delete-item {
+    border: none;
+    background-color: white;
+}
+
+#search-bar {
+    border: none;
+    padding: 8px;
+    background-color: lightgrey;
+    margin: 0;
+}
+
+#banner {
+    width: 100%;
+}
+
+/* Dropdown button for My Account */
+.dropbtn {
+    background-color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+}
+
+/* div-container to position the dropdown content */
+.dropdown {
+    float: right;
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown content for My Account - hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside My Account dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover*/
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* 6 nos. of dropdown buttons */
+.dropbtn-2 {
+    background-color: white;
+    padding: 16px;
+    font-size: 12px;
+    border: none;
+    font-weight: bold;
+}
+
+.dropdown-2 {
+    margin: auto;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content-2 {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content-2 a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-2 a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-2:hover .dropdown-content-2 {display: block;}
+
+table td.r7td1 {
+    width: 40%;
+}
+
+table td.r8td1 {
+    padding-top: 15px;
+    color: grey;
+    font-weight: bold;
+}
+
+table td.r8td3 {
+    text-align: right; 
+    width: 40%; 
+    vertical-align: top;
+    font-weight: bold;
+    color: grey;
+    padding-top: 15px;
+}
+
+table td#r5td1 {
+    padding: 20px;
+}
+
+#cart {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+table #product_tbl {
+    margin: 0 auto; 
+    width: 100%; 
+    text-align: center; 
+    font-size: 12px;
+    border-collapse: collapse;
+    border-color: grey;
+}
+
+.header-3 {
+    text-align: center;
+}
+
+.btn3 {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+}
+
+.btn3 a {
+    text-decoration: none;
+    color: white;
+}
+
+input[type="text"] {
+    margin-right: 5px;
+    padding: 8px; 
+    border-radius: 0;
+    color: grey;
+    border-color: grey;
+    border-width: 0.5px;
+}
+
+#checkout-btn {
+    padding: 12px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: mediumvioletred;
+    color: white;
+    font-size: 12px;
+    margin-right: 0;
+}
+
+#total-price {
+    font-weight: bold;
+    color: mediumvioletred;
+    font-size: 18px;
+}
+
+td.total {
+    text-align: right;
+    vertical-align: top;
+    font-size: 18px;
+    color: grey;
+    padding-right: 25px;
+}
+
+td.checkout {
+    text-align: right;
+}
+
+#cart-total {
+    float: right; 
+    font-weight: bold; 
+    text-decoration: underline;
+    font-size: 25px;
+}
+
+#r6td1 {
+    width: 100%; 
+    margin:0 auto;
+}
+
+#subtotal-shipping {
+    vertical-align: top; 
+    text-align: right;
+    padding-top: 15px;
+    padding-right: 25px;
+    color: grey;
+    font-weight: bold;
+}
+
+#sub-fee {
+    color: mediumvioletred;
+}
